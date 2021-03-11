@@ -69,7 +69,6 @@ h1 {
   position: absolute;
   bottom: 0;
   z-index: 5;
-  min-height: 75%;
 }
 
 .big-logo-name {
@@ -96,7 +95,7 @@ h1 {
   margin-left: 5%;
   margin-bottom: 5%;
   transition: transform 1s, opacity 1s;
-  z-index: 5;
+  z-index: 7;
 }
 
 .narrow-name {

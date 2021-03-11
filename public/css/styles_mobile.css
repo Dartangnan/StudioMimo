@@ -83,14 +83,16 @@ h1 {
   display: flex;
   flex-flow: column;
   position: relative;
+  align-items: space-between;
+  height: 100vh;
 }
 
 .bottom-img {
   width: 100%;
   bottom: 0;
   z-index: 5;
-  min-height: 75%;
-  margin-bottom: -5px;
+  align-self: flex-end;
+  position: absolute;
 }
 
 .main-text-home {
@@ -101,7 +103,7 @@ h1 {
   margin-top: 20%;
   margin-bottom: 15%;
   transition: transform 1s, opacity 1s;
-  z-index: 5;
+  z-index: 7;
 }
 .big-logo-name {
   width: 100%;
