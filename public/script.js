@@ -8,6 +8,7 @@ const itemsNavBarMobile = document.querySelector(".nav-items.mobile");
 const navItems = document.querySelectorAll(".nav-items");
 const bottomNavItems = document.querySelectorAll(".bottom-nav-items a");
 const navBar = document.querySelector(".nav-bar");
+const footerLinks = document.querySelector(".icons");
 
 // ============== Declaration of functions ==============
 const rollSmoothTo = function (sectionName) {
@@ -46,23 +47,27 @@ body.addEventListener("click", function (e) {
   }
 });
 
-// Nav Bar links to the different sections of the website:
+// Links to the different sections of the website:
+// Nav bar links
 navItems.forEach((el) => {
   el.addEventListener("click", function (e) {
     rollSmoothTo(e.target.outerText);
   });
 });
 
+// Footer links
 bottomNavItems.forEach((el) => {
   el.addEventListener("click", function (e) {
     rollSmoothTo(e.target.outerText);
   });
 });
 
+// Call for action button:
 mainLinkHome.addEventListener("click", function (e) {
   rollSmoothTo("Contato");
 });
 
+// Make sure that the nav bar shows up if scrolling up and desapears if scrolling down
 const oldPosMin = 0;
 let oldPos = 70;
 window.onscroll = function () {
