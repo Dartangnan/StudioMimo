@@ -75,11 +75,10 @@ window.onscroll = function () {
     itemsNavBarMobile.classList.add("nav-items-hidden");
   }
   if (pageYOffset > oldPosMin && pageYOffset < oldPos) {
-    setTimeout(function () {
-      navBar.style.position = "fixed";
-      navBar.style.width = "100%";
-      navBar.style.transform = "translatey(0)";
-    }, 250);
+    navBar.style.position = "fixed";
+    navBar.style.width = "100%";
+    navBar.style.transform = "translatey(0)";
+
     oldPos = pageYOffset;
   } else if (pageYOffset > oldPosMin && pageYOffset > oldPos) {
     setTimeout(function () {
