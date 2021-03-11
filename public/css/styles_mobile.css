@@ -84,7 +84,7 @@ h1 {
   flex-flow: column;
   position: relative;
   align-items: space-between;
-  height: 100vh;
+  height: 95vh;
 }
 
 .bottom-img {
