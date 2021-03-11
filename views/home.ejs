@@ -32,30 +32,25 @@
     <link
       rel="stylesheet"
       media="screen and (min-width: 930px)"
-      href="styles.css"
+      href="/css/styles.css"
     />
     <link
       rel="stylesheet"
       media="screen and (max-width: 929px)"
-      href="styles_mobile.css"
+      href="/css/styles_mobile.css"
     />
     <script
       src="https://kit.fontawesome.com/4cec228884.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/public/css/favicon-16x16.png"
-    />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="icon" href="favicon.ico" type="icon" />
   </head>
   <body>
     <div class="nav-bar mobile">
       <img
         class="nav-image"
-        src="vertical-bg-cinza-escuro cópia 3.png"
+        src="/images/vertical-bg-cinza-escuro cópia 3.png"
         alt=""
       />
       <div class="nav-ham-icon hidden">
@@ -65,7 +60,7 @@
     <nav>
       <img
         class="narrow desktop"
-        src="vertical-bg-cinza-escuro cópia 4.png"
+        src="/images/vertical-bg-cinza-escuro cópia 4.png"
         alt=""
       />
       <div class="nav-items">
@@ -78,34 +73,34 @@
     </nav>
     <div class="home-aboutme">
       <div class="beige-pillar desktop">
-        <img class="sky" src="sky-home.png" />
+        <img class="sky" src="/images/sky-home.png" />
       </div>
       <div class="home">
         <div class="main-text-home main-text-hidden">
           <img
             class="big-logo-name narrow-name desktop"
-            src="public/css/big-logo2.png"
+            src="/images/big-logo2.png"
             alt=""
           />
           <img
             class="big-logo-name narrow-name mobile"
-            src="public/css/big-logo.png"
+            src="/images/big-logo.png"
             alt=""
           />
           <h2 class="sub-title">Aquarela feita com muito amor</h2>
           <a class="link-home link-hidden">Peça sua arte agora</a>
         </div>
-        <img class="bottom-img desktop" src="bottom.png" alt="" />
-        <img class="bottom-img mobile" src="bottom_mobile.png" alt="" />
+        <img class="bottom-img desktop" src="/images/bottom.png" alt="" />
+        <img class="bottom-img mobile" src="/images/bottom_mobile.png" alt="" />
       </div>
 
       <div class="about-me">
-        <img class="about-me-top-img" src="css/top-aboutme.png" />
+        <img class="about-me-top-img" src="/images/top-aboutme.png" />
         <div class="top-about-me">
           <h1 class="about-me-title">Sobre Mim</h1>
         </div>
         <div class="middle-aboutme">
-          <img class="profile-picture" src="public/css/profile-picture.png" />
+          <img class="profile-picture" src="/images/profile-picture.png" />
           <div class="aboutme-text">
             <p>
               Contrary to popular belief, Lorem Ipsum is not simply random text.
@@ -125,8 +120,8 @@
           </div>
         </div>
         <div class="bottom-about-me">
-          <img src="/public/css/bottom-aboutme1.png" alt="" />
-          <img src="/public/css/bottom-aboutme2.png" alt="" />
+          <img src="/images/bottom-aboutme1.png" alt="" />
+          <img src="/images/bottom-aboutme2.png" alt="" />
         </div>
       </div>
     </div>
@@ -149,7 +144,7 @@
       </div>
       <img
         class="my-work-topimg-1"
-        src="/public/css/mywork-top-right3.png"
+        src="/images/mywork-top-right3.png"
         alt=""
       />
     </div>
@@ -231,7 +226,20 @@
         </div>
       </form>
     </div>
-    <script src="script.js"></script>
+    <script>
+      setTimeout(function () {
+        {
+          document
+            .querySelector(".main-text-home")
+            .classList.remove("main-text-hidden");
+          setTimeout(function () {
+            document
+              .querySelector(".link-home")
+              .classList.remove("link-hidden");
+          }, 1000);
+        }
+      }, 1000);
+    </script>
     <footer>
       <div class="icons foot-item">
         <span><i class="fab fa-instagram"></i></span>
