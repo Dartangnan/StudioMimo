@@ -43,7 +43,12 @@
       src="https://kit.fontawesome.com/4cec228884.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
     <link rel="icon" href="favicon.ico" type="icon" />
   </head>
   <body>
@@ -150,7 +155,9 @@
     </div>
 
     <div class="contact-me">
-      <img class='my-work-bottom-img' src='/images/mywork-bottom-img.png''>
+      <img class='my-work-bottom-img mobile'
+      src='/images/mywork-bottom-img.png''> <img class='my-work-bottom-img
+      desktop' src='/images/mywork-bottom-img2.png''>
       <div class="contact-title"><h1>Contato</h1></div>
 
       <form class="contact-me-form">
@@ -227,20 +234,8 @@
         </div>
       </form>
     </div>
-    <script>
-      setTimeout(function () {
-        {
-          document
-            .querySelector(".main-text-home")
-            .classList.remove("main-text-hidden");
-          setTimeout(function () {
-            document
-              .querySelector(".link-home")
-              .classList.remove("link-hidden");
-          }, 1000);
-        }
-      }, 1000);
-    </script>
+    <script src="script.js"></script>
+
     <footer>
       <div class="icons foot-item">
         <span><i class="fab fa-instagram"></i></span>

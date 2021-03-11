@@ -242,9 +242,12 @@ h1 {
   z-index: 6;
   opacity: 0.5;
 }
-
+.my-work-bottom-img {
+  width: 100%;
+  margin-top: -23%;
+}
 .my-work {
-  height: 1200px;
+  height: 200vh;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -393,7 +396,7 @@ h1 {
     rgba(200, 176, 209, 1) 35%,
     rgba(170, 221, 249, 1) 100%
   );
-  padding-bottom: 2%;
+  padding-bottom: 1%;
 }
 
 .contact-title {
@@ -401,7 +404,7 @@ h1 {
   box-sizing: border-box;
   width: 100%;
   color: white;
-  margin-top: 0;
+  margin-top: -50px;
   padding-top: 0.1%;
 }
 
@@ -409,7 +412,7 @@ h1 {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  margin: -2% auto 15% auto;
+  margin: -2% auto 14% auto;
   width: 55%;
   min-width: 800px;
   border-radius: 20px;
