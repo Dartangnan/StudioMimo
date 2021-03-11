@@ -30,8 +30,9 @@ h1 {
   display: flex;
   background-color: white;
   justify-content: space-between;
-  z-index: 8;
+  z-index: 10;
   overflow: hidden;
+  transition: transform 1s;
 }
 
 .nav-image {
@@ -53,11 +54,17 @@ h1 {
   background-color: #c8b0d1;
   color: white;
 }
-
-.nav-items-m {
+/*
+.fixed-nav-bar {
+  position: fixed;
+  width: 100%;
+}
+*/
+.nav-items {
   display: flex;
   flex-flow: column;
-  position: absolute;
+  position: fixed;
+  margin-top: 13%;
   right: 0;
   border: 8px solid rgba(163, 157, 157, 0);
   width: 250px;
