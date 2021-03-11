@@ -36,14 +36,15 @@ h1 {
 
 .nav-image {
   width: 25%;
-  margin: 2% 3%;
+  margin: 4% 3%;
 }
 
 .nav-ham-icon {
   align-self: center;
   color: #c8b0d1;
-  border: 1px solid #c8b0d1;
-  padding: 3px 5px 1px 4px;
+  font-size: 1.8rem;
+  border: 2px solid #c8b0d1;
+  padding: 3px 5px 1px 5px;
   border-radius: 4px;
   margin: 1% 3%;
 }
@@ -231,15 +232,19 @@ h1 {
 }
 
 .my-work {
-  height: 600px;
+  height: 900px;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(0deg, #c9eafca2 0%, #6b397db7 100%);
+  background: linear-gradient(0deg, #c9eafca2 0%, #c9eafca2 5%, #6b397db7 100%);
 }
 
+.my-work-bottom-img {
+  position: absolute;
+  margin-top: 82%;
+}
 .album-bg {
   display: flex;
   flex-direction: column;
