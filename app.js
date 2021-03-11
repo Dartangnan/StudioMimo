@@ -13,6 +13,6 @@ app.get("/", function (req, res) {
   res.render("home");
 });
 
-app.listen(process.enc.PORT || 3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log("Server runnin on port 3000.");
 });
