@@ -75,18 +75,24 @@ window.onscroll = function () {
     itemsNavBarMobile.classList.add("nav-items-hidden");
   }
   if (pageYOffset > oldPosMin && pageYOffset < oldPos) {
-    navBar.style.position = "fixed";
-    navBar.style.width = "100%";
-    navBar.style.transform = "translatey(0)";
+    setTimeout(function () {
+      navBar.style.position = "fixed";
+      navBar.style.width = "100%";
+      navBar.style.transform = "translatey(0)";
+    }, 250);
     oldPos = pageYOffset;
   } else if (pageYOffset > oldPosMin && pageYOffset > oldPos) {
-    navBar.style.position = "fixed";
-    navBar.style.width = "100%";
-    oldPos = pageYOffset;
-    navBar.style.transform = "translatey(-100%)";
+    setTimeout(function () {
+      navBar.style.position = "fixed";
+      navBar.style.width = "100%";
+      oldPos = pageYOffset;
+      navBar.style.transform = "translatey(-100%)";
+    }, 250);
   } else {
-    navBar.style.transform = "translatey(0)";
-    navBar.style.position = "absolute";
+    setTimeout(function () {
+      navBar.style.transform = "translatey(0)";
+      navBar.style.position = "absolute";
+    }, 250);
   }
   console.log(pageYOffset);
 };
