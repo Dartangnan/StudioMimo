@@ -241,10 +241,6 @@ h1 {
   background: linear-gradient(0deg, #c9eafca2 0%, #c9eafca2 5%, #6b397db7 100%);
 }
 
-.my-work-bottom-img {
-  position: absolute;
-  margin-top: 82%;
-}
 .album-bg {
   display: flex;
   flex-direction: column;
@@ -383,14 +379,16 @@ h1 {
   );
   padding-bottom: 2%;
 }
-
+.my-work-bottom-img {
+  width: 100%;
+  margin-top: -20%;
+}
 .contact-title {
   text-align: center;
   box-sizing: border-box;
   width: 100%;
   color: white;
-  margin-top: 0;
-  padding-top: 0.1%;
+  margin-top: -5%;
 }
 
 .contact-me-form {
