@@ -90,3 +90,10 @@ window.onscroll = function () {
   }
   console.log(pageYOffset);
 };
+
+// Linking icons on the bottom are working:
+footerLinks.addEventListener("click", function (e) {
+  e.target.classList.length > 0
+    ? console.log(e.target.classList[1].includes("instagram"))
+    : console.log(e.target.classList);
+});

@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -574,6 +578,7 @@ footer {
 
 .icons span {
   padding: 10px;
+  color: white;
 }
 
 .bottom-nav-items {
@@ -586,4 +591,16 @@ footer {
 
 .bottom-nav-items span a {
   padding: 15px;
+}
+
+.icons a:active {
+  color: white;
+}
+
+.icons a:visited {
+  color: white;
+}
+
+.icons a:link {
+  color: white;
 }
