@@ -37,6 +37,12 @@ h1 {
   font-size: 6.5rem;
 }
 
+.section-hidden {
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 .nav-items a {
   color: white;
   padding: 25px;
