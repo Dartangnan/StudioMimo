@@ -49,7 +49,7 @@ app.post("/api/upload", (req, res, next) => {
     // Turn object into text
     console.log(JSON.stringify(fields));
 */
-    const attach = files.name
+    const attach = files.foto.name
       ? [{ filename: files.foto.name, path: files.foto.path }]
       : [];
     //console.log(files.foto.name);
