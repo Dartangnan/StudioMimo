@@ -50,9 +50,9 @@ app.post("/api/upload", (req, res, next) => {
     console.log(JSON.stringify(fields));
 */
     const attach = files.name
-      ? [{ filename: files.name, path: files.path }]
+      ? [{ filename: files.foto.name, path: files.foto.path }]
       : [];
-
+    //console.log(files.foto.name);
     // Creating message
     const dataDeHoje = new Date().toDateString();
     const message = {
