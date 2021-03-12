@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 // Creating Transporter to send e-mail:
 let transporter = nodemailer.createTransport({
-  service: "hotmail",
+  service: "Hotmail",
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASS,
