@@ -165,11 +165,11 @@
       desktop' src='/images/mywork-bottom-img2.png''>
       <div class="contact-title"><h1>Contato</h1></div>
 
-      <form class="contact-me-form">
+      <form action="/api/upload" enctype="multipart/form-data" method='post' class="contact-me-form">
         <div class="form-inner">
           <div class="form-nome form-item">
             <label>Nome:</label>
-            <input placeholder="Nome Completo" type="text" />
+            <input name='nome' placeholder="Nome Completo" type="text" />
           </div>
           <div class="form-telefone form-item">
             <label>Telefone:</label>
@@ -177,28 +177,29 @@
             <input
               type="tel"
               placeholder=" (000) - 0000 - 000"
-              pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+              pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}"
+              name='telefone'
             />
           </div>
           <div class="form-email form-item">
             <label>E-mail:</label>
-            <input placeholder="E-mail" type="email" />
+            <input name='email' placeholder="E-mail" type="email" />
           </div>
           <div class="form-rua form-item">
             <label>Endereço:</label>
-            <input placeholder="Rua, Número, Bloco e Apt." type="text" />
+            <input name='endereco' placeholder="Rua, Número, Bloco e Apt." type="text" />
           </div>
           <div class="form-bairro form-item">
             <label>Bairro:</label>
-            <input placeholder="Bairro" type="text" />
+            <input name='bairro' placeholder="Bairro" type="text" />
           </div>
           <div class="form-cidade form-item">
-            <label>Cidade/ES:</label>
-            <input placeholder="Cidade/Estado" type="text" />
+            <label >Cidade/ES:</label>
+            <input name='cidade' placeholder="Cidade/Estado" type="text" />
           </div>
           <div class="form-tamanho form-item">
             <label>Tamanho:</label>
-            <select>
+            <select name='tamanho'>
               <option></option>
               <option>Papel A3 - 21.0 × 29.7 cm</option>
               <option>Papel A4 - 14.8 × 21.0 cm</option>
@@ -208,20 +209,20 @@
           </div>
           <div class="form-data form-item">
             <label>Data de entrega:</label>
-            <input type="date" datemin:'2021-03-17' />
+            <input name='data' type="date" datemin:'2021-03-17' />
           </div>
 
           <div class="form-descricao form-item">
             <label>Descrição:</label>
-            <textarea rows="8" type="text"></textarea>
+            <textarea name='descricao' rows="8" type="text"></textarea>
           </div>
           <div class="form-item form-foto">
             <label>Foto referência: [PNG, JPEG]</label>
-            <input type="file" accept="image/png, image/jpeg" />
+            <input name='foto' type="file" accept="image/png, image/jpeg" />
           </div>
           <div class="form-item form-cor">
             <label>Selecione o fundo da foto:</label>
-            <select>
+            <select name='corFundo'>
               <option></option>
               <option>🖼 Fundo Original</option>
               <option>🟧 Laranaja</option>
