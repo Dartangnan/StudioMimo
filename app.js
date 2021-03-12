@@ -69,7 +69,7 @@ app.post("/api/upload", (req, res, next) => {
       -- Informações do Projeto : --
 
       Tamanho: ${fields.tamanho}
-      Data: ${fields.data}
+      Data de entrega: ${fields.data}
       Cor do fundo: ${fields.corFundo}
       Descrição: ${fields.descricao}
       `,

@@ -70,34 +70,22 @@ mainLinkHome.addEventListener("click", function (e) {
 // Make sure that the nav bar shows up if scrolling up and desapears if scrolling down
 const oldPosMin = 0;
 let oldPos = 70;
+let altura = 0;
 window.onscroll = function () {
   if (!itemsNavBarMobile.classList.contains("nav-items-hidden")) {
     itemsNavBarMobile.classList.add("nav-items-hidden");
   }
+
   if (pageYOffset > oldPosMin && pageYOffset < oldPos) {
-    navBar.style.position = "fixed";
-    navBar.style.width = "100%";
-    navBar.style.transform = "translatey(0)";
+    altura >= 0 ? (altura = 0) : (altura += 10);
+    navBar.style.transform = `translatey(${altura}%)`;
 
     oldPos = pageYOffset;
   } else if (pageYOffset > oldPosMin && pageYOffset > oldPos) {
-    setTimeout(function () {
-      navBar.style.position = "fixed";
-      navBar.style.width = "100%";
-      oldPos = pageYOffset;
-      navBar.style.transform = "translatey(-100%)";
-    }, 250);
+    altura <= -100 ? (altura = -100) : (altura -= 10);
+    oldPos = pageYOffset;
+    navBar.style.transform = `translatey(${altura}%)`;
   } else {
-    setTimeout(function () {
-      navBar.style.transform = "translatey(0)";
-      navBar.style.position = "absolute";
-    }, 250);
+    navBar.style.transform = "translatey(0)";
   }
 };
-
-// Linking icons on the bottom are working:
-footerLinks.addEventListener("click", function (e) {
-  e.target.classList.length > 0
-    ? console.log(e.target.classList[1].includes("instagram"))
-    : console.log(e.target.classList);
-});
