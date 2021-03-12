@@ -93,7 +93,6 @@ window.onscroll = function () {
       navBar.style.position = "absolute";
     }, 250);
   }
-  console.log(pageYOffset);
 };
 
 // Linking icons on the bottom are working:

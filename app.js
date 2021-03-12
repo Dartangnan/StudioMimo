@@ -43,10 +43,15 @@ app.post("/api/upload", (req, res, next) => {
       next(err);
       return;
     }
+    /*
     // Getting the form info in fields and files
     console.log(fields, files);
     // Turn object into text
     console.log(JSON.stringify(fields));
+*/
+    const attach = files.name
+      ? [{ filename: files.name, path: files.path }]
+      : [];
 
     // Creating message
     const dataDeHoje = new Date().toDateString();
@@ -55,6 +60,7 @@ app.post("/api/upload", (req, res, next) => {
       to: "dart_theml@hotmail.com",
       subject: `E-Mail do Site - Studio Mimo - ${dataDeHoje}`,
       text: ` -- Informações pessoais: --
+
       Nome: ${fields.nome}
       Telefone: ${fields.telefone}
       E-mail: ${fields.email}
@@ -67,6 +73,7 @@ app.post("/api/upload", (req, res, next) => {
       Cor do fundo: ${fields.corFundo}
       Descrição: ${fields.descricao}
       `,
+      attachments: attach,
     };
 
     //Sending e-mail
