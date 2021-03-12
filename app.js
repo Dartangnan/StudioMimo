@@ -52,7 +52,7 @@ app.post("/api/upload", (req, res, next) => {
     const dataDeHoje = new Date().toDateString();
     const message = {
       from: ENV["E-MAIL"],
-      to: "contatomimostudio@gmail.com",
+      to: "dart_theml@hotmail.com.com",
       subject: `E-Mail do Site - Studio Mimo - ${dataDeHoje}`,
       text: ` -- Informações pessoais: --
       Nome: ${fields.nome}
