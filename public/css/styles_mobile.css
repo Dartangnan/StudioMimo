@@ -27,6 +27,11 @@ h1 {
   font-size: 2.5rem;
 }
 
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 .nav-bar {
   position: fixed;
   width: 100%;
