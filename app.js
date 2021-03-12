@@ -18,8 +18,8 @@ app.use(express.static("public"));
 let transporter = nodemailer.createTransport({
   service: "hotmail",
   auth: {
-    user: ENV["EMAIL"],
-    pass: ENV["PASS"],
+    user: process.env.EMAIL,
+    pass: process.env.PASS,
   },
 });
 
@@ -51,7 +51,7 @@ app.post("/api/upload", (req, res, next) => {
     // Creating message
     const dataDeHoje = new Date().toDateString();
     const message = {
-      from: ENV["EMAIL"],
+      from: process.env.EMAIL,
       to: "dart_theml@hotmail.com.com",
       subject: `E-Mail do Site - Studio Mimo - ${dataDeHoje}`,
       text: ` -- Informações pessoais: --
