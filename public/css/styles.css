@@ -263,7 +263,8 @@ h1 {
   justify-content: flex-start;
   align-items: center;
 
-  background: linear-gradient(0deg, #c9eafca2 0%, #6b397db7 100%);
+  background: linear-gradient(0deg, #c9eafca2 0%, #c9eafca2 5%, #ebdbf1b7 100%);
+  /*background: linear-gradient(0deg, #c9eafca2 0%, #6b397db7 100%);*/
 }
 
 .album-bg {
@@ -280,10 +281,11 @@ h1 {
 }
 
 .my-work-topimg-1 {
+  display: none;
   width: 100%;
-  margin-top: -5%;
-  z-index: 06;
+  z-index: 6;
   position: absolute;
+  margin-top: -5%;
 }
 
 .my-work-title {
@@ -291,12 +293,13 @@ h1 {
   box-sizing: border-box;
   width: 100%;
   padding-top: 50px;
-  z-index: 1;
+  z-index: 8;
 }
 
 .my-work-title h1 {
-  color: rgb(255, 255, 255);
-  margin: 5% 15% 0% 15%;
+  color: #c8b0d1;
+  border-bottom: 1px solid #c8b0d1;
+  margin: 5% 15% -5% 10%;
 }
 
 .album {
