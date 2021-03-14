@@ -267,7 +267,7 @@ h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(0deg, #c9eafca2 0%, #c9eafca2 5%, #ebdbf1b7 100%);
+  background: linear-gradient(0deg, #6a5174 0%, #ebdbf1b7 50%, #ebdbf1b7 100%);
 }
 
 .my-work-topimg-1 {
@@ -404,7 +404,7 @@ h1 {
 }
 .my-work-bottom-img {
   width: 100%;
-  margin-top: -23%;
+  margin-top: -55%;
 }
 .contact-title {
   text-align: center;

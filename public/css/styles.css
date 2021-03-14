@@ -253,17 +253,19 @@ h1 {
 }
 .my-work-bottom-img {
   width: 100%;
-  margin-top: -23%;
+  margin-top: -65%;
+  margin-bottom: 5%;
 }
 .my-work {
-  height: 200vh;
+  height: 250vh;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 
-  background: linear-gradient(0deg, #c9eafca2 0%, #c9eafca2 5%, #ebdbf1b7 100%);
+  background: linear-gradient(0deg, #6a5174 0%, #ebdbf1b7 50%, #ebdbf1b7 100%);
+  /*background: linear-gradient(0deg, #c9eafca2 0%, #c9eafca2 5%, #ebdbf1b7 100%);*/
   /*background: linear-gradient(0deg, #c9eafca2 0%, #6b397db7 100%);*/
 }
 
@@ -409,6 +411,8 @@ h1 {
     rgba(170, 221, 249, 1) 100%
   );
   padding-bottom: 1%;
+
+  padding-top: 4.35%;
 }
 
 .contact-title {
@@ -416,7 +420,7 @@ h1 {
   box-sizing: border-box;
   width: 100%;
   color: white;
-  margin-top: -50px;
+  margin-top: -10%;
   padding-top: 0.1%;
 }
 
