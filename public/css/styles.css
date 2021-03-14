@@ -20,6 +20,7 @@ nav {
   align-items: flex-end;
   justify-content: space-between;
   background-color: #c8b0d1;
+  z-index: 10;
 }
 
 nav img {
@@ -65,7 +66,7 @@ h1 {
   display: grid;
   grid-template-columns: 40% 60%;
   position: relative;
-  height: 75vh;
+  height: 82vh;
 }
 
 .narrow {
@@ -78,7 +79,8 @@ h1 {
   width: 100%;
   position: absolute;
   bottom: 0;
-  z-index: 5;
+  z-index: 1;
+  max-height: 95vh;
 }
 
 .big-logo-name {
@@ -263,8 +265,10 @@ h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
-  background: linear-gradient(0deg, #6a5174 0%, #ebdbf1b7 50%, #ebdbf1b7 100%);
+  background: linear-gradient(0deg, #6a5174 0%, #ebdbf1b7 50%, #ffffffb7 100%),
+    url("/images/bg-album.png");
+  background-blend-mode: multiply;
+  background-size: cover;
   /*background: linear-gradient(0deg, #c9eafca2 0%, #c9eafca2 5%, #ebdbf1b7 100%);*/
   /*background: linear-gradient(0deg, #c9eafca2 0%, #6b397db7 100%);*/
 }
@@ -293,7 +297,7 @@ h1 {
 .my-work-title {
   text-align: center;
   box-sizing: border-box;
-  width: 100%;
+  width: 80%;
   padding-top: 50px;
   z-index: 8;
 }
@@ -309,8 +313,8 @@ h1 {
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto;
   margin-top: 10%;
-  width: 85%;
-  min-height: 55%;
+  width: 75%;
+  min-height: 50%;
   gap: 10px;
   z-index: 1;
 }

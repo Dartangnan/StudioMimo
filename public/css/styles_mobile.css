@@ -267,7 +267,11 @@ h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(0deg, #6a5174 0%, #ebdbf1b7 50%, #ebdbf1b7 100%);
+  /* background: linear-gradient(0deg, #6a5174 0%, #ebdbf1b7 50%, #ebdbf1b7 100%);*/
+  background: linear-gradient(0deg, #6a5174 0%, #ebdbf1b7 50%, #ffffffb7 100%),
+    url("/images/bg-album.png");
+  background-blend-mode: multiply;
+  background-size: cover;
 }
 
 .my-work-topimg-1 {
