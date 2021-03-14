@@ -124,7 +124,7 @@ h1 {
   flex-direction: column;
   justify-content: flex-start;
   width: 80%;
-  margin-top: 14vh;
+  margin-top: 10vh;
   margin-bottom: 15%;
   transition: transform 1s, opacity 1s;
   z-index: 7;
