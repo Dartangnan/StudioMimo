@@ -182,6 +182,9 @@ h1 {
   padding-right: 105px;
   transform: translate(230px, -25px);
   z-index: 5;
+  color: #c8b0d1;
+  border-bottom: 1px solid #c8b0d1;
+  margin: 5% 15% -5% 10%;
 }
 
 .home-aboutme {
